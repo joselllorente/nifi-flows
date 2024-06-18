@@ -1,5 +1,6 @@
 flows:
-  4f21abe2-3416-4ed1-a488-4cdf61785dac: {ver: 1, file: Test_Flow_2_NR.snapshot, comments: '',
-    author: anonymous, created: 1718704675515, flowName: Test Flow 2 NR, flowDesc: ''}
+  4f21abe2-3416-4ed1-a488-4cdf61785dac: {ver: 2, file: Test_Flow_2_NR.snapshot, comments: Nuevos
+      cambios..., author: anonymous, created: 1718704778951, flowName: Test Flow 2
+      NR, flowDesc: ''}
 layoutVer: 1
 bucketId: 0bc529f9-9c68-4779-a291-404e222c0fd2
