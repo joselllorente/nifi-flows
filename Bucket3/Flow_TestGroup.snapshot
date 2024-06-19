@@ -148,6 +148,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "96f39dfa-62a1-32b3-9718-9664992167a2",
+            "id" : "81dd0e9f-dee3-3a72-8bb8-2957419dbc6d",
+            "instanceIdentifier" : "2f8ca2e9-0190-1000-0000-000026bd4d8c",
+            "name" : "DistributeLoad",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "96f39dfa-62a1-32b3-9718-9664992167a2",
+          "identifier" : "8f0b0fb9-a1b2-32f2-b06e-88258b62817d",
+          "instanceIdentifier" : "2fcb758e-0190-1000-0000-000037e5a00f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "96f39dfa-62a1-32b3-9718-9664992167a2",
+            "id" : "c0602fd0-5c7b-3e5c-a0aa-6339dce233b0",
+            "instanceIdentifier" : "2fcb3f50-0190-1000-ffff-ffffbd1666f0",
+            "name" : "GetFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "96f39dfa-62a1-32b3-9718-9664992167a2",
             "id" : "8033e564-d2cc-3f85-879b-4947fbc7d3e0",
             "instanceIdentifier" : "2f8d0fd3-0190-1000-0000-000058c3ff00",
             "name" : "PublishKafka_2_6",
@@ -1792,6 +1825,123 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GetFTP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.26.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "96f39dfa-62a1-32b3-9718-9664992167a2",
+          "identifier" : "c0602fd0-5c7b-3e5c-a0aa-6339dce233b0",
+          "instanceIdentifier" : "2fcb3f50-0190-1000-ffff-ffffbd1666f0",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "GetFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 306.00012969970703,
+            "y" : 437.00000762939453
+          },
+          "properties" : {
+            "Keep Source File" : "false",
+            "Minimum File Age" : "0 sec",
+            "Polling Interval" : "0 sec",
+            "Input Directory" : "/",
+            "Batch Size" : "10",
+            "Minimum File Size" : "0 B",
+            "Ignore Hidden Files" : "true",
+            "Recurse Subdirectories" : "true",
+            "File Filter" : "[^\\.].*"
+          },
+          "propertyDescriptors" : {
+            "Keep Source File" : {
+              "displayName" : "Keep Source File",
+              "identifiesControllerService" : false,
+              "name" : "Keep Source File",
+              "sensitive" : false
+            },
+            "Minimum File Age" : {
+              "displayName" : "Minimum File Age",
+              "identifiesControllerService" : false,
+              "name" : "Minimum File Age",
+              "sensitive" : false
+            },
+            "Polling Interval" : {
+              "displayName" : "Polling Interval",
+              "identifiesControllerService" : false,
+              "name" : "Polling Interval",
+              "sensitive" : false
+            },
+            "Input Directory" : {
+              "displayName" : "Input Directory",
+              "identifiesControllerService" : false,
+              "name" : "Input Directory",
+              "sensitive" : false
+            },
+            "Maximum File Age" : {
+              "displayName" : "Maximum File Age",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Age",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Maximum File Size" : {
+              "displayName" : "Maximum File Size",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Size",
+              "sensitive" : false
+            },
+            "Minimum File Size" : {
+              "displayName" : "Minimum File Size",
+              "identifiesControllerService" : false,
+              "name" : "Minimum File Size",
+              "sensitive" : false
+            },
+            "Ignore Hidden Files" : {
+              "displayName" : "Ignore Hidden Files",
+              "identifiesControllerService" : false,
+              "name" : "Ignore Hidden Files",
+              "sensitive" : false
+            },
+            "Recurse Subdirectories" : {
+              "displayName" : "Recurse Subdirectories",
+              "identifiesControllerService" : false,
+              "name" : "Recurse Subdirectories",
+              "sensitive" : false
+            },
+            "File Filter" : {
+              "displayName" : "File Filter",
+              "identifiesControllerService" : false,
+              "name" : "File Filter",
+              "sensitive" : false
+            },
+            "Path Filter" : {
+              "displayName" : "Path Filter",
+              "identifiesControllerService" : false,
+              "name" : "Path Filter",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GetFile",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
