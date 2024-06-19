@@ -1,0 +1,6 @@
+flows:
+  dcc6fe30-6ff8-4f4c-b717-910288169d2c: {ver: 1, file: Flow_TestGroup.snapshot, comments: Primera
+      versión, author: anonymous, created: 1718788529982, flowName: Flow TestGroup,
+    flowDesc: Flujo de Prueba en cluster de NiFi}
+layoutVer: 1
+bucketId: 6e95d4db-e5b7-49ec-85c7-6c79bd5d7c22
